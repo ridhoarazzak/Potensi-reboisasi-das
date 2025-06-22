@@ -3,18 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Peta Potensi Reboisasi das</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <title>Peta Konservasi DAS</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     body { margin: 0; font-family: sans-serif; }
-    h1 {
-      text-align: center;
-      margin: 0;
-      padding: 1em;
-      background: #e0f7fa;
-    }
-    #map { width: 100%; height: 70vh; }
-    #chart-container { width: 90%; margin: 1em auto; }
+    h1 { text-align: center; background: #e0f7fa; margin: 0; padding: 1em; }
+    #map { width: 100%; height: 80vh; }
     .legend {
       background: white;
       padding: 10px;
@@ -31,50 +25,15 @@
       opacity: 0.7;
       border: 1px solid #ccc;
     }
-    .buttons {
-      text-align: center;
-      margin: 1em 0;
-    }
-    button {
-      margin: 6px;
-      padding: 8px 14px;
-      font-size: 14px;
-      background-color: #4a90e2;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #357ab7;
-    }
   </style>
 </head>
 <body>
 
-  <h1>Peta Potensi Reboisasi das Solok Selatan</h1>
-
+  <h1>Peta Konservasi DAS - Solok Selatan</h1>
   <div id="map"></div>
-  <div id="chart-container">
-    <canvas id="chart"></canvas>
-  </div>
 
-  <div class="buttons">
-    <button onclick="window.downloadCSV()">Download CSV</button>
-    <button id="toggleGeojson" onclick="toggleLayer('geojson')">Matikan GeoJSON</button>
-    <button id="toggleTile" onclick="toggleLayer('tile')">Matikan Tile GEE</button>
-  </div>
-
-  <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- PapaParse -->
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
-  <!-- Turf.js -->
-  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
-  <!-- Script utama -->
   <script src="script.js"></script>
 
 </body>
-  </html>
+</html>
