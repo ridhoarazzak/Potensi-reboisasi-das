@@ -7,8 +7,8 @@ window.onload = () => {
     { attribution: 'Tiles © Esri' }
   ).addTo(map);
 
-  // Tile GEE dari asset konservasi_dascoba
-  const geeUrl = "https://earthengine.googleapis.com/v1/projects/ee-mrgridhoarazzak/maps/da7bee5736f62acc3554989be39133c3-ab5b2c53d9f0bfd54abd444341033e6a/tiles/{z}/{x}/{y}";
+  // Tile GEE dari asset konservasi_dascoba (URL terbaru)
+  const geeUrl = "https://earthengine.googleapis.com/v1/projects/ee-mrgridhoarazzak/maps/2801e111435f9459921b8b8003db65f3-2a19293da28df995ed63d0ca4f93ff4b/tiles/{z}/{x}/{y}";
 
   const konservasiLayer = L.tileLayer(geeUrl, {
     attribution: "Google Earth Engine",
