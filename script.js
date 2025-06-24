@@ -19,7 +19,7 @@ window.onload = () => {
   L.control({ position: 'bottomright' }).onAdd = () => {
     const div = L.DomUtil.create('div', 'legend');
     div.innerHTML = `<strong>Legenda</strong><br>
-      <i style="background:#1f78b4"></i> Area Konservasi DAS`;
+      <i></i> Area Konservasi DAS`;
     return div;
   }.addTo(map);
 };
