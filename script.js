@@ -1,13 +1,13 @@
 window.onload = () => {
   const map = L.map('map').setView([-1.5785, 101.3123], 12);
 
-  // Basemap Esri Satelit
-  const esri = L.tileLayer(
-    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-    { attribution: 'Tiles © Esri' }
+  // Basemap OpenStreetMap
+  const osm = L.tileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    { attribution: '© OpenStreetMap contributors' }
   ).addTo(map);
 
-  // Tile GEE dari asset konservasi_dascoba (URL terbaru)
+  // Tile GEE - pastikan URL ini masih aktif dan benar
   const geeUrl = "https://earthengine.googleapis.com/v1/projects/ee-mrgridhoarazzak/maps/2801e111435f9459921b8b8003db65f3-2a19293da28df995ed63d0ca4f93ff4b/tiles/{z}/{x}/{y}";
 
   const konservasiLayer = L.tileLayer(geeUrl, {
