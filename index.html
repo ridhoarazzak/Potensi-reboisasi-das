@@ -14,14 +14,16 @@
     .map-title {
       position: absolute;
       top: 20px;
-      left: 20px;
+      left: 50%;
+      transform: translateX(-50%);
       background: rgba(255, 255, 255, 0.9);
-      padding: 10px 15px;
-      font-size: 16px;
+      padding: 10px 20px;
+      font-size: 18px;
       font-weight: bold;
       border-radius: 5px;
       z-index: 1000;
       box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      text-align: center;
     }
 
     .legend {
@@ -41,7 +43,7 @@
       height: 18px;
       float: left;
       margin-right: 8px;
-      background: #8B5E3C; /* Warna coklat */
+      background: red;
       border: 1px solid #aaa;
     }
   </style>
@@ -49,14 +51,14 @@
 <body>
   <div id="map"></div>
 
-  <!-- Judul di atas peta -->
+  <!-- Judul di tengah atas -->
   <div class="map-title">
     Potensi Reboisasi DAS
   </div>
 
-  <!-- Legenda dengan satu warna -->
+  <!-- Legenda warna merah -->
   <div class="legend">
-    <i></i> Potensi Reboisasi
+    <i></i> Potensi Reboisasi DAS
   </div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
