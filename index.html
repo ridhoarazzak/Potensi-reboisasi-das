@@ -10,35 +10,55 @@
       height: 100%;
       margin: 0;
     }
+
+    .map-title {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 15px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      z-index: 1000;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+
     .legend {
-      background: white;
-      padding: 10px;
       position: absolute;
       bottom: 20px;
       left: 20px;
-      z-index: 1000;
-      font-size: 14px;
-      line-height: 18px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 15px;
       border-radius: 5px;
+      z-index: 1000;
       box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      font-size: 14px;
     }
+
     .legend i {
       width: 18px;
       height: 18px;
       float: left;
       margin-right: 8px;
-      opacity: 0.8;
+      background: #8B5E3C; /* Warna coklat */
+      border: 1px solid #aaa;
     }
   </style>
 </head>
 <body>
   <div id="map"></div>
-  <div class="legend">
-    <strong>Legenda:</strong><br>
-    <i style="background:#006400"></i> Sangat Potensial<br>
-    <i style="background:#FFFF00"></i> Potensial Sedang<br>
-    <i style="background:#FF0000"></i> Tidak Potensial<br>
+
+  <!-- Judul di atas peta -->
+  <div class="map-title">
+    Potensi Reboisasi DAS
   </div>
+
+  <!-- Legenda dengan satu warna -->
+  <div class="legend">
+    <i></i> Potensi Reboisasi
+  </div>
+
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script.js"></script>
 </body>
